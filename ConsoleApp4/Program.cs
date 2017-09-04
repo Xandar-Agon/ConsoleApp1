@@ -10,6 +10,12 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Como te chamas?");
+            string nome = Console.ReadLine();
+            int space = nome.IndexOf(" ");
+            Console.WriteLine(nome.Substring(space+1));
+            Console.Read();
+            Console.WriteLine("O teu nome tem {0} caracteres", nome.Length);
         }
     }
 }
